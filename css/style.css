@@ -1,0 +1,4129 @@
+@font-face {
+    font-family: 'IRANYekanWeb(Light)';
+    src: url('../fonts/IRANYekanWebFaNum-Light.eot');
+    src: url('../fonts/IRANYekanWebFaNum-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/IRANYekanWebFaNum-Light.woff2') format('woff2'), url('../fonts/IRANYekanWebFaNum-Light.woff') format('woff'), url('../fonts/IRANYekanWebFaNum-Light.ttf') format('truetype'), url('../fonts/IRANYekanWebFaNum-Light.svg#IRANYekanWebFaNum-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANYekanWeb(FaNum)';
+    src: url('../fonts/IRANYekanWebFaNum.eot');
+    src: url('../fonts/IRANYekanWebFaNum.eot?#iefix') format('embedded-opentype'), url('../fonts/IRANYekanWebFaNum.woff2') format('woff2'), url('../fonts/IRANYekanWebFaNum.woff') format('woff'), url('../fonts/IRANYekanWebFaNum.ttf') format('truetype'), url('../fonts/IRANYekanWebFaNum.svg#IRANYekanWebFaNum') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANYekanWeb(Bold)';
+    src: url('../fonts/IRANYekanWebFaNum-Bold.eot');
+    src: url('../fonts/IRANYekanWebFaNum-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/IRANYekanWebFaNum-Bold.woff2') format('woff2'), url('../fonts/IRANYekanWebFaNum-Bold.woff') format('woff'), url('../fonts/IRANYekanWebFaNum-Bold.ttf') format('truetype'), url('../fonts/IRANYekanWebFaNum-Bold.svg#IRANYekanWebFaNum-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    font-family: 'IRANYekanWeb(FaNum)';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shadow {
+    webkit-box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, .1) !important;
+    -moz-box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, .1)!important;
+    box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, .1)!important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/*header*/
+
+.menu_header {
+    width: 100%;
+    height: 95px;
+}
+
+.mynav {
+    -webkit-flex-direction: row-reverse;
+    -o-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.mynav .navbar-collapse {
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+.mynav .nav-link {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.mynav .nav-link {
+    border-bottom: 2px solid transparent;
+}
+
+.mynav .active .nav-link {
+    color: #f43154;
+    position: relative;
+}
+
+.mynav .active .nav-link {
+    border-bottom: 2px solid #f43154;
+}
+
+.mynav .nav-link:hover {
+    border-bottom: 2px solid #f43154;
+}
+
+.mynav .nav-link {
+    color: #595959;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.heder_pro_alert {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    order: 2;
+}
+
+.pro_img {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.pro_img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 6px solid #f0f0f0;
+}
+
+.pro_text_tt {
+    margin-left: 5px
+}
+
+.pro_text_tt .pro_text_tt_span {
+    color: #4c4c4c;
+    font-family: 'IRANYekanWeb(Light)';
+}
+
+.pro_text_tt .pro_text_tt_span span {
+    color: #f43154;
+}
+
+.pro_img_alert {
+    border-radius: 50%;
+    border: 6px solid #f0f0f0;
+    width: 50px;
+    height: 50px;
+    text-align: center
+}
+
+.pro_img_alert i {
+    color: #a9a9a9;
+    line-height: 2;
+    font-size: 19px;
+}
+
+.mybadge {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    background: #f43154
+}
+
+.btn_succ {
+    color: #fff;
+    margin-right: 10px;
+    background: #0aa926;
+    border-radius: 18px;
+}
+
+.btn_succ2 {
+    display: none;
+}
+
+.box1 {
+    position: relative;
+    cursor: pointer
+}
+
+.box1 .notifications {
+    background: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.box1 .notifications .fa {
+    color: #cecece;
+    font-size: 20px;
+}
+
+.box1 .notifications .num {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ff2c74;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+}
+
+.box1 ul {
+    position: relative;
+    left: -50%;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    top: 6px;
+    margin: 0;
+    width: 250px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: none;
+    z-index: 100;
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+.box1 .notifications:hover ul {
+    display: block;
+}
+
+.box1 ul li {
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 8px 0;
+    display: flex;
+    font-family: 'IRANYekanWeb(FaNum)';
+}
+
+.box1 ul li:last-child {
+    border-bottom: none;
+}
+
+.box1 ul li .icon {
+    width: 24px;
+    height: 24px;
+    background: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 15px;
+}
+
+.box1 ul li .icon .fa {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.box1 ul li .text {
+    position: relative;
+    font-family: 'IRANYekanWeb(FaNum)';
+    top: 3px;
+    cursor: pointer;
+}
+
+.box1 ul li:hover .text {
+    color: #ff2c74;
+}
+
+.menu_header_index {
+    background: url(../img/VectoUHEAD.png) no-repeat;
+    height: 350px;
+    background-position: center;
+    color: #5b6eff;
+}
+
+.around-you {
+    text-align: center;
+    line-height: 36;
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 18px;
+}
+
+/*header*/
+
+/*card img*/
+
+.img_card_me {
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.color_restouran {
+    color: #8439b3;
+    text-align: center;
+    font-size: 13.88px;
+}
+
+.color_sewit {
+    color: #a76e4c;
+    text-align: center;
+    font-size: 13.88px;
+}
+
+.color_furits {
+    color: #fd6f71;
+    text-align: center;
+    font-size: 13.88px;
+}
+
+.color_fast {
+    color: #fd6f71;
+    text-align: center;
+    font-size: 13.88px;
+}
+
+.color_market {
+    color: #606060;
+    text-align: center;
+    font-size: 13.88px;
+}
+
+.rating_div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+}
+
+.rating_div_img_card {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.rating_div_img_card img {
+    width: 80px;
+}
+
+.color-me {
+    color: #fd6f71;
+}
+
+.color-me:hover {
+    color: #fd6f71;
+}
+
+.item_num {
+    font-size: 12px;
+    color: #acacac;
+}
+
+/*card img*/
+
+.card_me {
+    border-radius: 20px;
+    border: 1px solid #ffffff !important;
+}
+
+.shadow_me:hover {
+    box-shadow: 0 0 20px 0.1px #ec3e5a !important;
+    -webkit-box-shadow: 0 0 20px 0.1px #ec3e5a !important;
+    -moz-box-shadow: 0 0 20px 0.1px #ec3e5a !important;
+    transition: all 0.5s ease;
+}
+
+.position_me {
+    width: 100%;
+    position: relative;
+    top: -30px;
+    margin-bottom: 30px;
+}
+
+.position_me_index {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.top_restourant {
+    width: 100%;
+    height: 200px;
+    background: #f7f7f7;
+    margin-top: 40px;
+}
+
+.card_restouran {
+    width: 35%;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+/*header*/
+
+/*top banner start*/
+
+.top-banner {
+    width: 100%;
+    height: 186px;
+    background: url(../img/Top_banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-banner h2, .text_me {
+    padding-top: 13px;
+    text-align: center;
+    font-family: 'IRANYekanWeb(Bold)';
+    color: #f8f9fa;
+}
+
+/*search*/
+
+.search1 {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: -16px;
+}
+
+.search_me {
+    width: 100%;
+    height: 50px;
+    border-radius: 22.5px;
+    border: 1px solid #e6e6e6;
+    padding-right: 10px;
+}
+
+.search_icon {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #ececec;
+    top: 8px;
+    left: 20px;
+    border-radius: 100%;
+}
+
+.search_icon img {
+    position: relative;
+    right: 12px;
+    top: 3px;
+}
+
+.search_me:focus, textarea:focus, select:focus {
+    outline: 0;
+}
+
+/*item list*/
+
+.list_item .media {
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+}
+
+.donald {
+    font-family: 'IRANYekanWeb(Bold)';
+    font-size: 19.28px;
+    color: #2a2a2a;
+}
+
+.express {
+    width: 19px;
+    height: 19px;
+}
+
+.image_item {
+    position: relative;
+    z-index: 2;
+}
+
+img.mt-4 {
+    position: relative;
+    z-index: 10084;
+}
+
+.image_item_num {
+    width: 33px;
+    height: 40px;
+    background-color: #febf00;
+    border-radius: 5px;
+    position: absolute;
+    right: 32px;
+    bottom: -19px;
+    padding-top: 15px;
+    z-index: -24;
+}
+
+.img_card_item_in {
+    border-radius: 50%;
+    border: 5px solid #f6f6f6;
+    width: 98px;
+    height: 98px;
+}
+
+.image_item_num1 {
+    right: 40px;
+    bottom: -30px;
+}
+
+.num_hour_btn {
+    width: 58px;
+    height: 25px;
+    border-radius: 13.57px;
+    background-color: #ab3cd4;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 13.57px;
+    padding-top: 3px;
+}
+
+.media_me {
+    transition: all 0.5s ease;
+}
+
+.media_me:hover {
+    box-shadow: 0 0 25px #c5c5c5;
+    -webkit-box-shadow: 0 0 25px #c5c5c5;
+    -moz-box-shadow: 0 0 25px #c5c5c5;
+}
+
+.text_me_1 {
+    font-size: 12px;
+    font-family: 'IRANYekanWeb(FaNum)';
+    color: #6e6e6e;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.color_a {
+    color: #2a2a2a;
+}
+
+.MyColor {
+    color: #6e6e6e;
+    font-size: 14px;
+}
+
+.img_fast_access {
+    background: url(../img/fastaccess.png) no-repeat;
+    height: 243px;
+    background-position: right;
+    margin-top: 32px;
+}
+
+/*item list*/
+
+/*footer*/
+
+.footer {
+    width: 100%;
+    height: 140px;
+    background-color: #f9f9f9;
+    margin-top: 25px;
+}
+
+.about_me {
+    padding-top: 28px;
+    font-size: 14px;
+}
+
+.list_footer ul li {
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.list_footer ul li:first-child {
+    margin-right: 0;
+}
+
+.list_footer ul li a {
+    color: #686868;
+}
+
+.footer2 {
+    position: relative;
+    top: 193px;
+    width: 100%;
+    height: 140px;
+    background-color: #f9f9f9;
+}
+
+/*footer*/
+
+/*Accuent_setting*/
+
+.top-banner_blue {
+    width: 100%;
+    height: 148px;
+    background: url(../img/top_banner_Blue.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.file-upload {
+    display: none;
+}
+
+.upload-button {
+    cursor: pointer;
+}
+
+.change_profile_1 {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    top: -80px;
+}
+
+.profile_setting {
+    position: relative;
+    width: 157px;
+    height: 157px;
+}
+
+.profile_setting_img1 {
+    width: 157px;
+    height: 157px;
+    border-radius: 100%;
+    max-width: unset;
+}
+
+.profile_setting_img2 {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    text-align: center;
+    box-shadow: 0 0 21px #5a5a5a;
+    -moz-box-shadow: 0 0 21px #5a5a5a;
+    -webkit-box-shadow: 0 0 21px #5a5a5a;
+    cursor: pointer;
+}
+
+.name_accuent {
+    color: #f3f1f1;
+    font-family: 'IRANYekanWeb(Bold)';
+    font-size: 30px;
+}
+
+.pro_text {
+    margin-right: 5px
+}
+
+.num_phone {
+    color: #f3f1f1;
+    font-size: 18px;
+    font-family: 'IRANYekanWeb(FaNum)';
+}
+
+.loaction_accuent_setting {
+    width: 209px;
+    height: 65px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: relative;
+    top: 50px;
+    box-shadow: 0 0 21px #5a5a5a;
+    -webkit-box-shadow: 0 0 21px #5a5a5a;
+    -moz-box-shadow: 0 0 21px #5a5a5a;
+    text-align: center;
+}
+
+.hidden_seo {
+    position: absolute;
+    left: 9999px;
+}
+
+.loacation {
+    height: 100%;
+}
+
+.location_icon {
+    background: url(../img/placeholder.png) no-repeat;
+    width: 32px;
+    height: 39px;
+}
+
+.location_name {
+    color: #4a4a4a;
+    font-size: 18px;
+}
+
+.text1 {
+    font-size: 14px;
+    color: #4a4a4a;
+    text-align: justify;
+    margin-top: 40px;
+    width: 80%;
+}
+
+/*Accuent_setting end*/
+
+/*info person form*/
+
+.info_person_div {
+    position: relative;
+    top: -30px;
+}
+
+.info_person {
+    font-size: 24px;
+    font-family: 'IRANYekanWeb(Bold)';
+    color: #2faec4;
+    margin-bottom: 0;
+}
+
+.form_accuent {
+    margin-top: 44px;
+}
+
+.form_am {
+    height: 50px;
+    border-radius: 23px;
+    text-align: center;
+}
+
+.select_am {
+    height: 50px;
+    border-radius: 23px;
+    text-align-last: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/Shape1670.png);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    padding-left: 5px;
+    color: #6c7581;
+}
+
+.text_area {
+    text-align: right;
+    border-radius: 23px;
+    padding: 15px;
+    max-height: 120px;
+    -webkit-resize: none;
+    resize: none;
+}
+
+.text2_form {
+    color: #ff3535;
+    margin-top: 15px;
+}
+
+.saved_info {
+    width: 25%;
+    height: 55px;
+    border-radius: 23px;
+    background: #5b6eff;
+    line-height: 2.8;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'IRANYekanWeb(Bold)';
+}
+
+/*footer1*/
+
+.footer1 {
+    width: 100%;
+    background-color: #f9f9f9;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+.food-icon {
+    position: relative;
+}
+
+.food-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+}
+
+.food-info h5 {
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 16px;
+}
+
+/*footer1*/
+
+/*order list*/
+
+#fast_order {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 10000000;
+}
+
+.fast_order {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #f33251;
+    text-align: center;
+    color: #f8f9fa;
+    padding: 8px 0 0 0;
+}
+
+.title_profile {
+    position: relative;
+    margin-top: 10px;
+}
+
+.title_profile span {
+    color: #f3705b;
+    font-size: 18px;
+    position: relative;
+}
+
+.add_btn {
+    position: absolute;
+    left: 1.5%;
+    top: 4px;
+    color: #fff;
+    background: #f3705b;
+    font-size: 16px;
+}
+
+.add_btn:focus {
+    outline: none;
+    box-shadow: none;
+    -wbkit-box-shadow: none;
+}
+
+.hr_order {
+    border-top: 1px solid #f3705b;
+}
+
+.form_addres {
+    display: none;
+}
+
+.input_me_addres {
+    border: 1px solid #f3705b;
+    background: #fff;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.lbl_addres_me {
+    font-size: 14px;
+}
+
+.input_me_addres2 {
+    background-image: url(../img/select_arrow.png)!important;
+    background-repeat: no-repeat!important;
+    background-position: 4%!important;
+    padding-left: 20px!important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.btn_add_addres_new {
+    margin-bottom: 16px;
+    color: #ffffff;
+    background: #f3705b;
+    padding: 5px 0;
+    width: 120px;
+}
+
+.select_add img {
+    width: 31px;
+    height: 39px;
+}
+
+.select-address2 {
+    width: 70%;
+}
+
+a.locate_edit {
+    width: 52px;
+}
+
+.checkout_card {
+    height: 322px;
+    border-radius: 10px;
+}
+
+/*order list*/
+
+/*login register*/
+
+.login_am {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.login_con {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    webkit-box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, .1) !important;
+    -moz-box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, .1)!important;
+    box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, .1)!important;
+}
+
+.login_right {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 46px;
+}
+
+.login_right img {
+    width: 158px;
+    height: 54px;
+    margin-top: 53px;
+}
+
+.login_left {
+    background: url(../img/restourant.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    text-align: center;
+    padding-top: 220px;
+}
+
+.login_text {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 12px;
+}
+
+.login_text1 {
+    text-align: center;
+    color: #f8e6e8;
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+.form_login {
+    width: 90%;
+    margin-top: 20px;
+    height: 37px;
+    border: 2px solid #e4e4e4;
+    border-radius: 18px;
+}
+
+.form_login:focus {
+    outline: 0;
+}
+
+.eat_health {
+    font-family: 'IRANYekanWeb(Bold)';
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-top: 18px;
+}
+
+.b1 {
+    background: rgba(231, 55, 39, 0);
+    background: -moz-linear-gradient(top, rgba(231, 55, 39, 0) 0%, rgba(243, 50, 82, 0.71) 71%, rgba(243, 50, 82, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(231, 55, 39, 0) 0%, rgba(243, 50, 82, 0.71) 71%, rgba(243, 50, 82, 1) 100%);
+    background: -o-linear-gradient(top, rgba(231, 55, 39, 0) 0%, rgba(243, 50, 82, 0.71) 71%, rgba(243, 50, 82, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(231, 55, 39, 0) 0%, rgba(243, 50, 82, 0.71) 71%, rgba(243, 50, 82, 1) 100%);
+    background: linear-gradient(to bottom, rgba(231, 55, 39, 0) 0%, rgba(243, 50, 82, 0.71) 71%, rgba(243, 50, 82, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e73727', endColorstr='#f33252', GradientType=0);
+    width: 100%;
+    height: 100%;
+}
+
+.btn_login {
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 14px;
+    width: 90%;
+    margin-top: 20px;
+    height: 37px;
+    border: 2px solid #e4e4e4;
+    border-radius: 18px;
+    background-color: #f33251;
+    color: #ffffff;
+    line-height: 15px;
+}
+
+.btn_login:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* end login register*/
+
+/*location_setting*/
+
+.topbanner_location {
+    background: url(../img/topbanner_loction.png) no-repeat;
+    height: 128px;
+    text-align: center;
+    line-height: 4;
+    font-family: 'IRANYekanWeb(Bold)';
+    color: #ffffff;
+    font-size: 28px;
+    background-size: cover;
+    background-position: center;
+}
+
+.register_addrss {
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 24px;
+    color: #5b6eff;
+    padding-top: 20px;
+}
+
+.address_name {
+    color: #bbbbbb;
+    border: 1px solid #bbbbbb;
+    border-radius: 23px;
+    width: 100%;
+    height: 45px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.address_name:focus {
+    outline: 0;
+}
+
+.select_setting {
+    width: 100%;
+    height: 45px;
+    text-align-last: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/Shape1670.png);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    margin-top: 30px;
+    border-radius: 23px;
+    color: #353535;
+    border-radius: 23px;
+}
+
+.select_setting:focus {
+    outline: 0;
+}
+
+.text_area_location {
+    margin-top: 30px;
+    border-radius: 23px;
+    width: 100%;
+    text-align: center;
+    resize: none;
+}
+
+.saved_info2 {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 23px;
+    text-align: center;
+    background: #5b6eff;
+    line-height: 2.5;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.store_address {
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 24px;
+    color: #f3705b;
+}
+
+.text_3 {
+    font-family: 'IRANYekanWeb(FaNum)';
+    font-size: 14px;
+    margin-top: 35px;
+}
+
+.card_location {
+    background: url(../img/placeholder.png) no-repeat;
+    height: 72px;
+    padding-right: 50px;
+    background-position: 95%;
+    border: 2px solid #e5e5e5;
+    border-radius: 20px;
+}
+
+.locate_name {
+    font-size: 13px;
+}
+
+.card_location:hover {
+    border: 2px solid #f3705b;
+}
+
+.select_amir {
+    font-size: 13px;
+    font-family: 'IRANYekanWeb(FaNum)';
+    color: #f3705b;
+    padding-top: 5px;
+}
+
+/*order list*/
+
+.top-banner1 {
+    background: url(../img/topbanner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 128px;
+}
+
+.text_order {
+    font-family: 'IRANYekanWeb(Bold)';
+}
+
+.text_order2 {
+    font-size: 28px;
+    font-family: 'IRANYekanWeb(Bold)';
+    color: #fff;
+}
+
+.num_order {
+    font-size: 18px;
+    font-family: 'IRANYekanWeb(Bold)';
+}
+
+.img_order img {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    border: 4px solid #f6f6f6;
+}
+
+.text_order {
+    font-size: 11.42px;
+    color: #565656;
+    font-family: 'IRANYekanWeb(Bold)';
+}
+
+.date-order {
+    color: #ff4c4c;
+}
+
+.img_order {
+    border-left: 1px solid #eeeeee;
+    width: 27%;
+    text-align: center;
+    padding: 5px;
+}
+
+.mycard_am {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.my-card {
+    border-radius: 20px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 25px #c5c5c5;
+}
+
+.my-card:hover {
+    transition: 0.5s ease;
+}
+
+.num_order_card span {
+    font-family: "IRANYekanWeb(Bold)";
+    padding-right: 5px;
+    font-size: 14px;
+    color: #363636;
+    display: block;
+}
+
+/*order list*/
+
+.counter_order {
+    font-size: 12.46px;
+    color: #6f6f6f;
+    padding: 5px;
+    padding-right: 5px;
+}
+
+.time_order {
+    width: 90px;
+    height: 32px;
+    background: #e0455e;
+    position: relative;
+    top: -1px;
+    right: -5px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    text-align: center;
+    line-height: 1.5;
+    color: #eeeeee;
+}
+
+.time_order span {
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    left: 3px;
+}
+
+.time_order_repeat {
+    width: 70px;
+    height: 32px;
+    background: #1b61ff;
+    position: relative;
+    top: -1px;
+    right: 12px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    text-align: center;
+    line-height: 1.5;
+    color: #eeeeee;
+}
+
+.time_order_repeat span {
+    font-size: 14.54px;
+    position: relative;
+    top: 2px;
+    left: 3px;
+}
+
+.score_eat {
+    width: 70px;
+    height: 30px;
+    border-radius: 12px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 25px #c5c5c5;
+    -webkit-box-shadow: 0 0 25px #c5c5c5;
+    -moz-box-shadow: 0 0 25px #c5c5c5;
+    position: relative;
+    top: 10px;
+    line-height: 1.5;
+    left: -11px;
+}
+
+.status .status_order {
+    color: #b5acb4;
+    font-size: 14px;
+    text-align: center;
+}
+
+.sell_order {
+    font-family: 'IRANYekanWeb(Bold)';
+    font-size: 14px;
+    color: #c535b6;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cast-order {
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 18px;
+    text-align: center;
+    color: #17bc65;
+    position: relative;
+    top: 10px;
+}
+
+.cast-order span {
+    font-size: 12px;
+    text-align: center;
+    color: #17bc65;
+}
+
+.see-order {
+    width: 91.48px;
+    height: 30px;
+    box-shadow: 0 0 25px #c5c5c5;
+    -webkit-box-shadow: 0 0 25px #c5c5c5;
+    -moz-box-shadow: 0 0 25px #c5c5c5;
+    text-align: center;
+    border-radius: 11px;
+    position: relative;
+    top: 10px;
+    background: #ffffff;
+    z-index: 2;
+    margin-right: 80px;
+}
+
+.see-order a {
+    font-family: "IRANYekanWeb(FaNum)";
+    font-size: 14px;
+    color: #363636;
+}
+
+.comment-order {
+    width: 91.48px;
+    height: 30px;
+    box-shadow: 0 0 25px #c5c5c5;
+    -webkit-box-shadow: 0 0 25px #c5c5c5;
+    -moz-box-shadow: 0 0 25px #c5c5c5;
+    background: #ffc000;
+    text-align: center;
+    border-radius: 11px;
+    position: relative;
+    top: 10px;
+}
+
+.comment-order a {
+    color: #fff;
+    font-size: 14px;
+}
+
+#see-order-modal .modal-header {
+    direction: ltr;
+}
+
+#see-order-modal button.close {
+    margin-left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #f7f7f7;
+    margin-top: -2px;
+}
+
+#see-order-modal1 button.close {
+    margin-left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #f7f7f7;
+    margin-top: -2px;
+}
+
+.close_icon2 {
+    position: relative;
+    top: -11px;
+    left: -6px;
+}
+
+#sub-commnet button.close:focus {
+    outline: 0;
+}
+
+#see-order-modal button.close:focus {
+    outline: 0;
+}
+
+#see-order-modal1 button.close:focus {
+    outline: 0;
+}
+
+#sub-commnet .modal-header {
+    direction: ltr;
+}
+
+#sub-commnet button.close {
+    margin-left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #f7f7f7;
+    margin-top: -2px;
+}
+
+.close-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: #f7f7f7;
+}
+
+.select-address {
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 24px;
+    color: #f3705b;
+    text-align: center;
+}
+
+.header-modal-order {
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.mycard_am1 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    padding: 0;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.icon-modal {
+    padding: 10px;
+}
+
+.address-modal {
+    margin-left: 50px;
+}
+
+.mycard1 {
+    border: 1px solid #e5e5e5;
+}
+
+.mycard1:hover {
+    border: 1px solid #f3705b;
+    ;
+}
+
+.address_name {
+    color: #5a5a5a;
+}
+
+.hungry .selection {
+    margin-bottom: 1em;
+}
+
+.text-me-modal {
+    font-size: 14px;
+    color: #9d9d9d;
+}
+
+.hungry .selection label {
+    display: inline-block;
+    width: 100%;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.address_order {
+    color: #5a5a5a;
+    margin-left: 40px;
+}
+
+.submit-address {
+    font-family: "IRANYekanWeb(FaNum)";
+    font-size: 14px;
+    width: 100%;
+    height: 70px;
+    background-color: #1a74b9;
+    margin-top: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 5;
+}
+
+.edit-order {
+    margin-top: 20px;
+    float: left;
+}
+
+.hungry .selection input[type=radio] {
+    display: none;
+}
+
+.hungry .selection input[type=radio]:checked~label {
+    border: 1px solid #f3705b;
+}
+
+.submit-comment-order {
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.rating {
+    background: transparent;
+    display: block;
+    overflow: hidden;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    padding: 5px 20px 0 0;
+}
+
+.rating h2 {
+    color: #303030;
+    font-size: 24px;
+    margin-bottom: 18px;
+    font-family: 'IRANYekanWeb(Bold)';
+}
+
+.rating:not(:checked)>input {
+    display: none;
+}
+
+.text_area_location:focus {
+    outline: 0;
+}
+
+.btn-order {
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.btn-modal-comment {
+    width: 52%;
+    height: 45px;
+    background-color: #ffc000;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.btn-modal-cancel {
+    width: 30%;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #dedede;
+    color: #616161;
+    font-weight: bold;
+}
+
+/* - - - - - RATE */
+
+#rate:not(:checked)>label {
+    cursor: pointer;
+    float: right;
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: rgba(0, 135, 211, .4);
+    line-height: 33px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#rate:not(:checked)>label:hover, #rate:not(:checked)>label:hover~label {
+    color: rgba(0, 135, 211, .6);
+}
+
+#rate>input:checked+label:hover, #rate>input:checked+label:hover~label, #rate>input:checked~label:hover, #rate>input:checked~label:hover~label, #rate>label:hover~input:checked~label {
+    color: rgba(0, 135, 211, .8);
+}
+
+#rate>input:checked~label {
+    color: rgb(0, 135, 211);
+}
+
+/* - - - - - LIKE */
+
+#like:not(:checked)>label {
+    cursor: pointer;
+    float: right;
+    display: block;
+    color: #a8a8a8;
+    line-height: 33px;
+    text-align: center;
+    font-size: 42px;
+    margin-left: 3px;
+}
+
+#like:not(:checked)>label:hover, #like:not(:checked)>label:hover~label {
+    color: #ffc000;
+}
+
+#like>input:checked+label:hover, #like>input:checked+label:hover~label, #like>input:checked~label:hover, #like>input:checked~label:hover~label, #like>label:hover~input:checked~label {
+    color: #ffc000;
+}
+
+#like>input:checked~label {
+    color: #ffc000;
+}
+
+/*card panel*/
+
+.top-banner-green {
+    background: url(../img/topbannergreen.png) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 130px;
+}
+
+.basket-payment {
+    text-align: center;
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 28px;
+    line-height: 3;
+    color: #ffffff;
+}
+
+.order-payment {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.card-oreder-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 4px solid #f6f6f6;
+    margin-left: -7px;
+}
+
+.main-profile-card {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-flex;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.profile-name {
+    margin-right: 11px;
+    padding-top: 15px;
+}
+
+.decs_check {
+    width: 70%;
+    margin-right: 82px;
+    text-align: justify;
+}
+
+.card-order {
+    position: relative;
+    border: transparent;
+    width: 235px;
+    border-radius: 10px;
+    height: 110px;
+}
+
+.restourant-name {
+    font-size: 15px;
+    font-family: "IRANYekanWeb(Bold)";
+    color: #565656;
+}
+
+.see-order-payment a {
+    font-family: "IRANYekanWeb(FaNum)";
+    color: #918e8e;
+    font-size: 12px;
+}
+
+.description-order {
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 20px;
+    color: #4f4f4f;
+}
+
+.food-info {
+    width: 150px;
+}
+
+.desc-order {
+    margin-top: 10px;
+}
+
+.description-order-text {
+    padding-top: 15px;
+    font-size: 14px;
+    color: #706f6f;
+}
+
+.counter-number {
+    width: 60px;
+    height: 75px;
+    border-radius: 18px;
+    border: 1px solid #000;
+}
+
+.card-payment {
+    border-radius: 10px;
+}
+
+.delete-picture {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: url(../img/ios7-trash.png) no-repeat;
+    background-position: center;
+    background-color: #d84144;
+    position: absolute;
+    top: 60px;
+}
+
+/*counter  input*/
+
+.number span {
+    cursor: pointer;
+}
+
+.number {
+    width: 55px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: 0px 0px 34px 5px #f6f6f6;
+    -moz-box-shadow: 0px 0px 34px 5px #f6f6f6;
+    box-shadow: 0px 0px 34px 5px #f6f6f6;
+}
+
+.minus, .plus {
+    line-height: 1;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    background: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    top: -9px;
+    -webkit-box-shadow: 9px 3px 160px -2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 9px 3px 160px -2px rgba(0, 0, 0, 0.15);
+    box-shadow: 9px 3px 160px -2px rgba(0, 0, 0, 0.15);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.plus {
+    color: #65c65b;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.minus {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.number input {
+    text-align: center;
+    font-size: 26px;
+    border-radius: 4px;
+    display: inline-block;
+    width: 100%;
+    background: #ebebeb;
+    border: 1px solid transparent;
+    height: 25px;
+    position: relative;
+    vertical-align: middle;
+    top: -10px;
+}
+
+/*counter  input*/
+
+/*payment*/
+
+.payment {
+    color: #f33251;
+}
+
+.payment-item2 {
+    width: 100%;
+}
+
+.price-box-text span {
+    color: #f7f7f7;
+}
+
+.price-box {
+    width: 100%;
+    height: 80px;
+    background-color: #17bc65;
+    border-radius: 15px;
+    position: relative;
+}
+
+.payment-pay-cancel {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.payment-pay {
+    width: 100%;
+    border-radius: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.price-box-text {
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 30px;
+    color: #f7f7f7;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.price-box-text span {
+    font-size: 17px;
+}
+
+.price-box-info {
+    text-align: center;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.text-black {
+    color: #545454;
+}
+
+.bank img {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.text-green {
+    font-size: 23px;
+    font-family: "IRANYekanWeb(Bold)";
+    color: rgb(23, 188, 101);
+    line-height: 0.754;
+    text-align: center;
+}
+
+.send-address {
+    font-size: 18px;
+    font-family: "IRANYekanWeb(Bold)";
+    color: rgb(45, 45, 45);
+    line-height: 3;
+    text-align: center;
+}
+
+.btn-address {
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    color: #2d2d2d;
+    border-radius: 20px;
+    border: 1px solid #d3d3d3;
+}
+
+.btn-address1 {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #2d2d2d;
+    border-radius: 10px;
+    border: 1px solid #d3d3d3;
+    line-height: 2;
+}
+
+.pro-pay {
+    font-size: 18px;
+    font-family: "IRANYekanWeb(FaNum)";
+    color: rgb(45, 45, 45);
+    font-weight: bold;
+    line-height: 0.777;
+    text-align: center;
+}
+
+.card-address {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.address-payment {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.my_item_p {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.card-location-payment {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.select-amir {
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+}
+
+.select-address2 {
+    color: #2d2d2d;
+    font-size: 14px;
+}
+
+.locate_edit {
+    margin-right: 4px;
+}
+
+.select_ad {
+    color: #f3705b;
+    text-align: right;
+    padding-right: 40px;
+}
+
+#see-order-modal1 .modal-header {
+    direction: ltr;
+}
+
+.text-end {
+    margin-top: 30px;
+    text-align: center;
+    color: #f3705b;
+}
+
+.text-end1 {
+    text-align: center;
+    color: #f3705b;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.payment {
+    width: 100%;
+    margin-top: 10px;
+    color: #f33251;
+}
+
+.casting-order {
+    width: 80%;
+    margin: 10px;
+}
+
+.casting-order p {
+    margin: 20px;
+    color: #6981dd;
+    font-weight: bold;
+}
+
+.payment-selection .payment-home {
+    margin-bottom: 1em;
+}
+
+.get-pay {
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 14px;
+    text-align: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hide the checkbox input (only needed for `:checkedproperty) */
+
+.switch-input {
+    display: none;
+}
+
+/* Switch */
+
+.switch-label {
+    display: block;
+    width: 48px;
+    height: 22px;
+    position: relative;
+    right: 10px;
+    text-indent: -150%;
+    clip: rect(0 0 0 0);
+    color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.switch-label:before, .switch-label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.switch-label:before {
+    width: 100%;
+    height: 100%;
+    background-color: #dedede;
+    border-radius: 9999em;
+    transition: background-color 0.25s ease;
+}
+
+.switch-label:after {
+    top: -1px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+    transition: left 0.25s ease;
+}
+
+.slider {
+    width: 100%;
+}
+
+/* When input is checked */
+
+.switch-input:checked+.switch-label {
+    /* Switch Rail */
+    /* Switch Knob */
+}
+
+.switch-input:checked+.switch-label:before {
+    background-color: #89c12d;
+}
+
+.switch-input:checked+.switch-label:after {
+    left: 24px;
+}
+
+.active_me {
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 20px;
+}
+
+.payment-home {
+    margin-top: 20px;
+    border: 1px solid #5b72ff;
+    border-radius: 20px;
+    background-color: white;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.payment_tab .nav-item {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.payment_tab>.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #007bff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.payment_tab>.nav-pills .nav-link.active, .nav-pills .show>.nav-link:nth-child(2) {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hungry .selection {
+    margin-bottom: 0em;
+}
+
+.payment_tab .payment_tab>.nav-pills .nav-item-payment2 .active {
+    color: #fff;
+    background-color: #007bff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/*carousel */
+
+/* fast accessble */
+
+.profile_slider {
+    width: 100px;
+    height: 110px;
+    border-radius: 100%;
+    position: relative;
+    top: 23px;
+}
+
+.profile_slider img {
+    position: relative;
+    z-index: 10;
+}
+
+.slider_item {
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.div_owl {
+    margin-top: 25PX;
+    margin-bottom: 25PX;
+}
+
+.image_item1 {
+    width: 33px;
+    height: 40px;
+    background-color: #febf00;
+    border-radius: 5px;
+    position: relative;
+    right: 32px;
+    z-index: 2;
+    top: -9px;
+    line-height: 2.5;
+}
+
+.express_me {
+    padding-bottom: 12px;
+}
+
+.img_owl_my {
+    position: relative;
+    right: 11px;
+    top: -4px;
+}
+
+.img_owl_my img {
+    width: auto !important;
+}
+
+.express_index span {
+    margin-left: 38px;
+    color: #4d4d4d;
+    font-size: 12px;
+    margin-right: 15px;
+    white-space: nowrap;
+}
+
+.express_index img {
+    height: 15px;
+    margin-top: 5px;
+}
+
+.access-img {
+    background: url(../img/fastaccess.png) no-repeat;
+    height: 243px;
+    background-position: center;
+    text-align: center;
+    padding-top: 65px;
+    margin-top: 40px;
+}
+
+.access-img span {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.favorite-order {
+    margin-top: 40px;
+    font-family: "IRANYekanWeb(Bold)";
+}
+
+.favorite-order span {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    font-size: 1.75rem;
+    color: #9a26d4;
+}
+
+.favirte-access {
+    width: 105px;
+    height: 34px;
+    color: rgb(154, 38, 212);
+    text-align: center;
+    line-height: 2;
+    margin: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    -webkit-background-color: rgb(212, 195, 212);
+    -moz-background-color: rgb(255, 255, 255);
+    -o-background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 253, 253);
+    -webkit-background-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
+    -moz-background-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
+    -o-background-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.favorite-order {
+    margin: 50px 10px;
+}
+
+.order-favorite {
+    padding: 10px 0;
+}
+
+.offer_speacial {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.offer_speacial span {
+    font-size: 20px;
+    font-family: "IRANYekanWeb(FaNum)";
+    color: rgb(255, 113, 18);
+}
+
+.favirte-access:hover {
+    background: rgb(154, 38, 212);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.order_box {
+    width: 16%;
+    padding: 10px;
+    height: 230px;
+}
+
+.order_box {
+    margin: 20px;
+}
+
+.img_card_in img {
+    width: 100%;
+    height: 125px;
+}
+
+.card-express {
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -20px;
+}
+
+.food_order {
+    font-family: 'IRANYekanWeb(FaNum)';
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    color: #000
+}
+
+.casting_order {
+    text-align: center;
+    color: #0ead20;
+    margin-top: 5px;
+}
+
+.banner_app {
+    background: url(../img/banner_app.png) no-repeat;
+    min-height: 220px;
+    margin-top: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.enable_tond h3 {
+    color: #ffffff;
+    font-family: 'IRANYekanWeb(bold)';
+    padding-top: 30px;
+}
+
+.enable_tond span {
+    font-size: 48px;
+    color: #fff;
+    font-family: 'IRANYekanWeb(Bold)';
+}
+
+.peroperty_me {
+    margin-top: 35px;
+}
+
+.peroperty {
+    width: 50%;
+}
+
+.peroperty span {
+    color: #ffffff;
+}
+
+.get_app {
+    margin-top: 67px;
+    margin-right: 34px;
+}
+
+.sibapp a img {
+    margin-top: 7px;
+    width: 170px;
+    height: 100%;
+}
+
+.coffe-bazzar {
+    width: 170px;
+    height: 100%;
+}
+
+.pic_app {
+    position: absolute;
+    top: -80px;
+}
+
+.foot_index {
+    background-color: #fff;
+    margin-top: 80px;
+}
+
+.foot_index .about_me {
+    padding-top: 0px;
+}
+
+.foot_index .img_logo_footer {
+    margin-left: 10px;
+}
+
+/* fast accessble */
+
+/* restoran */
+
+.back-rest {
+    min-height: 360px;
+    background-size: cover !important;
+    background-position: center!important;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.back-rest::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#header_curve {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+}
+
+favorite-order {
+    font-family: "IRANYekanWeb(Bold)";
+    margin: 0 auto;
+}
+
+.my_nav_rest .mynav {
+    position: relative;
+    z-index: 1;
+}
+
+.my_nav_rest .fa-bars {
+    color: #fff
+}
+
+.my_nav_rest .mynav .nav-link {
+    color: #fff;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.my_nav_rest .mynav .active .nav-link {
+    color: #f43154;
+}
+
+.my_nav_rest .pro_text_tt_span {
+    color: #fff;
+}
+
+.my_nav_rest .pro_img img {
+    border: 6px solid rgba(130, 130, 130, 0.5);
+}
+
+.my_nav_rest .pro_img_alert {
+    border: 6px solid rgba(130, 130, 130, 0.5);
+}
+
+.my_nav_rest .box1 .notifications {
+    background: transparent;
+}
+
+.my_nav_rest .box1 .notifications .fa {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* .my_nav_rest li.nav-item {
+    border-bottom: 2px solid #fff;
+} */
+
+.box_rest_top {
+    position: relative;
+    z-index: 2;
+}
+
+.box_rest_top .img_card_item_in {
+    border: 6px solid rgba(130, 130, 130, 0.5);
+    width: 170px;
+    height: 170px;
+}
+
+.box_rest_top .image_item_num {
+    width: 40px;
+    height: 47px;
+    right: unset;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -33px;
+}
+
+.box_rest_top .donald, .box_rest_top .text_me_1, .box_rest_top .MyColor {
+    color: #fff;
+    font-size: 16px;
+}
+
+.box_rest_top .text_me_1 {
+    width: 62%;
+    line-height: 2;
+}
+
+.box_rest_top .text_item_2 {
+    width: 40%;
+}
+
+.box_rest_top .donald {
+    font-size: 28px;
+}
+
+.box_rest_top .media_me:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn_rest_more {
+    color: #c4ff10;
+    background-color: transparent;
+    border: 1px solid #c4ff10;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    top: 8px;
+    margin-right: 2rem;
+}
+
+.cont_rest {
+    font-size: 18px;
+    color: #04ff04
+}
+
+.rest_call {
+    font-size: 18px;
+    color: #fff!important;
+    margin-right: 15px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    height: 38px;
+    padding: 3px 10px;
+}
+
+.po_re_t {
+    position: relative;
+    top: 5px;
+}
+
+.favirte-access {
+    width: 91px;
+    height: 34px;
+    font-family: 'IRANYekanWeb(Bold)';
+    color: #6f6f6f;
+    text-align: center;
+    line-height: 2;
+    border-radius: 18px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    -webkit-background-color: rgb(212, 195, 212);
+    -moz-background-color: rgb(255, 255, 255);
+    -o-background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 253, 253);
+    -webkit-background-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
+    -moz-background-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
+    -o-background-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s;
+}
+
+.favirte-access:hover {
+    background: rgb(38, 148, 212);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.restouran_select {
+    width: 100%;
+    background: #f3f3f3;
+    border-radius: 10px;
+}
+
+.search1 {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: -40px;
+}
+
+.search_me1 {
+    width: 100%;
+    height: 50px;
+    border-radius: 22.5px;
+    border: 1px solid #e6e6e6;
+    padding-right: 10px;
+    margin-top: 50px;
+}
+
+.search_icon2 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #ececec;
+    top: 57px;
+    left: 20px;
+    border-radius: 100%;
+}
+
+.search_icon2 img {
+    position: relative;
+    right: 12px;
+    top: 3px;
+}
+
+.search_me1:focus, textarea:focus, select:focus {
+    outline: 0;
+}
+
+.btn-filter {
+    width: 252px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 20px;
+    line-height: 2.5;
+    border: 1px solid #f88699;
+}
+
+.btn-filter a {
+    line-height: 2.5;
+    color: #f88699;
+}
+
+.food-icon1 {
+    height: 142px;
+    border-radius: 20px;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.food-icon1 img {
+    position: relative;
+    border-radius: 20px;
+    width: 142px;
+    height: 142px;
+}
+
+.offer-food1 {
+    width: 59px;
+    height: 26px;
+    background: #fc3e2d;
+    opacity: 0.8;
+    margin: 0 auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.time-lips {
+    width: 120px;
+    height: 30px;
+    background: #ce21ca;
+    border-radius: 15px;
+    opacity: 0.8;
+    color: #FFFFFF;
+    font-size: 10px;
+    text-align: center;
+    line-height: 3;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.food-info h5 {
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 16px;
+}
+
+.dastehbandi_me {
+    margin-top: -40px;
+    width: 100%;
+}
+
+.delete-picture {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: url(../img/ios7-trash.png) no-repeat;
+    background-position: center;
+    background-color: #d84144;
+    position: absolute;
+    top: 60px;
+}
+
+.food-info h2 {
+    font-family: "IRANYekanWeb(Bold)";
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+.number span {
+    cursor: pointer;
+}
+
+.number {
+    width: 92px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: 0px 0px 34px 5px #f6f6f6;
+    -moz-box-shadow: 0px 0px 34px 5px #f6f6f6;
+    box-shadow: 0px 0px 34px 5px #f6f6f6;
+    margin-top: 12px;
+    margin-right: 5px;
+}
+
+.minus, .plus {
+    line-height: 1;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    background: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    top: -9px;
+    -webkit-box-shadow: 9px 3px 160px -2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 9px 3px 160px -2px rgba(0, 0, 0, 0.15);
+    box-shadow: 9px 3px 160px -2px rgba(0, 0, 0, 0.15);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.plus {
+    color: #65c65b;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.minus {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.number input {
+    text-align: center;
+    font-size: 26px;
+    border-radius: 4px;
+    display: inline-block;
+    width: 100%;
+    background: #ebebeb;
+    border: 1px solid transparent;
+    height: 25px;
+    position: relative;
+    vertical-align: middle;
+    top: -10px;
+}
+
+.card-payment {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.food-info {
+    width: 100%;
+}
+
+.food-info p {
+    font-family: 'IRANYekanWeb(FaNum)';
+    font-size: 14px;
+}
+
+.food-info del {
+    font-size: 10px;
+    font-family: "IRANYekanWeb(FaNum)";
+    color: #aaaaaa;
+}
+
+.card-payment {
+    margin-top: 22px;
+    width: 95%;
+    border: 0;
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+}
+
+.text-color-red {
+    font-family: 'IRANYekanWeb(FaNum)';
+    font-size: 18px;
+    color: #f33251;
+}
+
+.score {
+    width: 65px;
+    height: 22px;
+    background-color: rgb(255, 192, 0);
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FFFFFF;
+}
+
+.payment_restourant {
+    width: 220px;
+    height: 302px;
+    background: #0ccb61;
+    border-radius: 20px;
+}
+
+.num-pay1 {
+    font-family: 'IRANYekanWeb(FaNum)';
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.basket-pay1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.casting-pay1 {
+    font-family: 'IRANYekanWeb(FaNum)';
+    text-align: center;
+    line-height: 2;
+    font-size: 42px;
+}
+
+.toman {
+    text-align: center;
+    font-size: 20px;
+    margin-top: -11px;
+}
+
+.see-pay1 {
+    margin: 0 auto;
+    width: 130px;
+    height: 37px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    color: #101010;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 2.5;
+}
+
+.text-black {
+    color: #3e3e3e;
+}
+
+.card-prog {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    border: transparent;
+    -webkit-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.12);
+    -ms-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.12);
+    -o-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.12);
+    margin-top: 20px;
+}
+
+.score_box {
+    height: 150px;
+}
+
+.score_restourant {
+    background: url(../img/score.png) no-repeat;
+    height: 97px;
+    width: 97px;
+    line-height: 6;
+    background-position: right;
+    text-align: center;
+}
+
+.vote {
+    font-size: 19px;
+    text-align: center;
+    line-height: 4;
+}
+
+.prog_me {
+    width: 67%;
+    direction: ltr;
+    margin-right: 5px;
+}
+
+.progress_my {
+    display: -ms-flexbox;
+    display: flex;
+    height: 0.5rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+
+.progress_my .progress-bar {
+    background-color: #f05a23!important;
+}
+
+.bg-prog-red {
+    color: #f05a23!important;
+    font-family: 'IRANYekanWeb(FaNum)';
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.progress .progress-bar1 {
+    width: 90%;
+    background-color: #f05a23!important;
+    ;
+}
+
+.progress .progress-bar2 {
+    width: 50%;
+    background-color: #f3901e!important;
+}
+
+.progress .progress-bar3 {
+    width: 30%;
+    background-color: #faaf3a!important;
+}
+
+.progress .progress-bar4 {
+    width: 20%;
+    background-color: #f4aa61!important;
+}
+
+.bg-prog-sliver {
+    color: #9d9d9d;
+    font-family: 'IRANYekanWeb(FaNum)';
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-vote {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.12);
+    -ms-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.12);
+    -o-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.12);
+    margin-top: 15px;
+    border: transparent;
+}
+
+.vote_name {
+    color: #5b6eff;
+    font-family: 'IRANYekanWeb(FaNum)';
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+.score_vote {
+    font-family: "IRANYekanWeb(FaNum)";
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(255, 201, 36);
+    width: 43px;
+    height: 31px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+.last-days {
+    margin-left: 30px;
+    font-size: 11px;
+    color: #f7768b;
+    margin-top: -15px;
+    font-weight: bold;
+}
+
+.vote_p p {
+    font-size: 14.05px;
+    font-family: "IRANYekanWeb(FaNum)";
+    color: rgb(86, 86, 86);
+}
+
+.offer_box {
+    margin-top: 35px;
+    padding: 0;
+    border-radius: 21px;
+}
+
+.offer_flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -o-flex;
+}
+
+.offer_flex_pink {
+    background: #ff235c;
+    padding: 15px 45px;
+    border-radius: 0 20px 20px 0;
+}
+
+.offer_flex_pink_span1 {
+    font-size: 28px;
+}
+
+.offer_flex_pink_span1, .offer_flex_pink_span2 {
+    display: block;
+    color: #ffffff;
+    font-family: 'IRANYekanWeb(Bold)';
+}
+
+.offer_flex_pink_span2 {
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.offer_flex_input {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -o-flex;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 28px 28px 0 0;
+    width: 46%;
+}
+
+.offer_flex_input input {
+    border: none!important;
+    box-shadow: none;
+    border-bottom: 1px solid #cecece!important;
+    font-family: 'IRANYekanWeb(Bold)';
+    font-size: 18px;
+    color: #cecece;
+    padding-bottom: 12px;
+}
+
+.alert_input_offer {
+    margin-top: 8px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -o-flex;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.alert_offer {
+    color: #0ac562;
+    font-size: 14px;
+    font-family: 'IRANYekanWeb(Bold)';
+}
+
+.a_offer_chng {
+    color: #ffb22c;
+    font-family: 'IRANYekanWeb(FaNum)';
+    font-size: 14px;
+}
+
+.offer_flex_btn {
+    margin-right: 32px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -o-flex;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.btn_offer_send {
+    font-family: 'IRANYekanWeb(FaNum)';
+    color: #ff235c;
+    border: 1px solid #ff235c;
+    background: transparent;
+    padding: 18px 14px;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#pills-profile {
+    min-height: 130px;
+}
+
+/* restorant */
+
+/* wallet */
+
+.bg_wallet {
+    background: url(../img/Confetti.png);
+    height: 342px;
+    background-position: center;
+    width: 100%;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+
+.mojodi {
+    background: #212121;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.mojodi span {
+    font-size: 20px;
+}
+
+.mojodi .span1 {
+    color: #fff;
+}
+
+.mojodi .span2 {
+    color: #2de75d;
+}
+
+.sharzh {
+    background: #2de75d;
+    padding: 20px;
+    text-align: center;
+    width: 320px;
+    border-radius: 4px 4px 15px 15px;
+}
+
+.sharzh .span1 {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'IRANYekanWeb(Bold)';
+}
+
+.sharzh input {
+    background: #27ca51;
+    border-color: #27ca51;
+    border-radius: 20px;
+    margin: 15px 0 0 0;
+}
+
+.sharzh input::placeholder {
+    color: #104b20;
+    opacity: 1;
+}
+
+.sharzh input:-ms-input-placeholder {
+    color: #104b20;
+}
+
+.sharzh input::-ms-input-placeholder {
+    color: #104b20;
+}
+
+.sharzh button {
+    background: #2d96e7;
+    color: #fff;
+    border-radius: 15px;
+    position: relative;
+    top: 35px;
+}
+
+.all_wallet {
+    color: #3b3b3b;
+    font-family: 'IRANYekanWeb(Bold)';
+}
+
+.sharzh_akhir_item {
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+.sharzh_akhir_div {
+    width: 208px;
+    border: 1px solid #bdbdbd;
+    margin: 0 auto;
+    padding: 10px 9px;
+    border-radius: 27px;
+    position: relative;
+    top: -34px;
+    background: #fff;
+}
+
+.sharzh_akhir_div .span1 {
+    color: #3b3b3b;
+}
+
+.sharzh_akhir_div .span2 {
+    color: #19af31;
+    font-size: 25px;
+}
+
+.sharzh_akhir_div .span2 span {
+    color: #19af31;
+    font-size: 25px;
+    color: #19af31;
+    font-family: 'IRANYekanWeb(Bold)';
+}
+
+.sharzh_akhir_item {
+    margin-top: 40px
+}
+
+.sharzh_akhir_div2 {
+    position: relative;
+    top: -12px;
+}
+
+.sharzh_akhir_div2 .span1 {
+    color: #3b3b3b;
+    font-size: 20px;
+}
+
+.sharzh_akhir_div2 .span2 {
+    color: #ff3030;
+    font-size: 20px;
+}
+
+.sharzh_akhir_div2 .span3 {
+    color: #ff3030;
+    font-size: 20px;
+}
+
+.mt-me {
+    margin-top: 15px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.mynav .dropdown-toggle::after {
+    display: none;
+}
+
+.mynav .dropdown-menu {
+    left: unset;
+    right: 0;
+    text-align: right;
+}
+.vis_xs{
+    display: none;
+}
+.btn_rest_more {
+     top: unset;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* wallet */
+
+@media only screen and (max-width: 1200px) {
+    .pro_text {
+        margin-right: 5px;
+        width: 60%;
+    }
+    .top-banner img {
+        height: 190px;
+    }
+    .text1 {
+        width: 85%;
+    }
+    /*Topbanner*/
+    .login_left {
+        display: none;
+    }
+    .login_right {
+        width: 100%;
+    }
+    .score_eat {
+        margin-left: 30px;
+    }
+    .order_box {
+        width: 25%;
+        padding: 10px;
+        height: 230px;
+    }
+    .pic_app {
+        width: 320px;
+    }
+    .pic_app img {
+        width: 320px;
+    }
+    .banner_app {
+        padding: 25px 0;
+    }
+    .enable_tond span {
+        font-size: 43px;
+        color: #fff;
+        font-family: 'IRANYekanWeb(Bold)';
+    }
+    .peroperty {
+        margin-left: 5px;
+    }
+    .payment_restourant {
+        margin: 0 auto;
+        margin-top: 12px;
+    }
+    .card-payment {
+        border-radius: 20px;
+    }
+    .prog_me {
+        width: 85%;
+        margin-right: 5px;
+    }
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .welcome {
+        display: none;
+    }
+    .price-box {
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .payment-pay {
+        width: 250px;
+        margin: 0 auto;
+    }
+    .img_logo_amir {
+        display: none
+    }
+    .img_logo_amir2 {
+        display: block;
+        position: absolute;
+        top: 53px;
+        left: 7px;
+    }
+    .profile {
+        margin-top: 10px;
+    }
+    .notifacation {
+        margin-top: 10px;
+    }
+    .city_drop {
+        margin-right: 10px;
+    }
+    /*Topbanner*/
+    .top-banner img {
+        height: 190px;
+    }
+    /*Topbanner*/
+    .name_accuent {
+        color: #4a4a4a;
+    }
+    .num_phone {
+        color: #4a4a4a;
+    }
+    .decs_check {
+        width: 70%;
+        margin-right: 30px;
+    }
+    .login_left {
+        display: none;
+    }
+    .login_right {
+        width: 100%;
+    }
+    .login_am {
+        width: 85%;
+    }
+    .score_eat {
+        width: 70px;
+        height: 30px;
+        margin-left: 30px;
+    }
+    .order_box {
+        width: 40%;
+        padding: 10px;
+        height: 230px;
+    }
+    .change_profile_1 {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+    }
+    .pro_text {
+        margin-right: 0;
+        margin-top: 15px;
+        width: 100%;
+        order: 2;
+    }
+    .text1 {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .favirte-access {
+        width: 92px;
+    }
+    .pic_app {
+        top: 0px;
+    }
+    .order_box1 {
+        margin: 0 auto;
+    }
+    .pic_app {
+        width: 100%;
+    }
+    .pic_app img {
+        width: 100%;
+    }
+    .tondtond_warp_md {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .foot_index .img_logo_footer {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .foot_index {
+        margin-top: 20px;
+    }
+    .div_tfooter {
+        width: 100%;
+        text-align: center;
+    }
+    .btn-address1 {
+        margin-bottom: 15px;
+    }
+    .checkout_card {
+        padding-bottom: 22px;
+        margin: 0 15px;
+        margin-top: 20px;
+    }
+    .payment_restourant {
+        margin: 0 auto;
+        margin-top: 12px;
+    }
+    .card-payment {
+        border-radius: 20px;
+    }
+    .box-me2 {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .prog_me {
+        width: 80%;
+        margin-right: 8px;
+    }
+    .heder_pro_alert {
+        order: 0;
+    }
+    .mynav .nav-link {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .mynav .navbar-nav {
+        width: 200px;
+        webkit-box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, .1) !important;
+        -moz-box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, .1)!important;
+        box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, .1)!important;
+        box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, .1)!important;
+        padding: 0 10px;
+    }
+    .box_rest_top .text_me_1 {
+        width: 100%;
+    }
+    .tt_my_warp {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .tt_my_jc2 {
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .box_rest_top .text_item_2 {
+        width: 100%;
+        margin-bottom: 15px
+    }
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .img_logo_amir {
+        display: none
+    }
+    .get_app {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -o-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-justify-content: space-around;
+        -o-justify-content: space-around;
+        justify-content: space-around;
+    }
+    .img_logo_amir2 {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 7px;
+    }
+    .top-banner img {
+        height: 190px;
+    }
+    .list_footer ul li {
+        margin-top: 13px;
+        width: 35%;
+        text-align: center;
+    }
+    .list_footer ul li:nth-child(3) {
+        margin-right: 0
+    }
+    .footer {
+        height: 180px;
+    }
+    .name_accuent {
+        font-size: 20px;
+    }
+    .change_profile_1 {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .loaction_accuent_setting {
+        width: 40%;
+    }
+    .login_left {
+        display: none;
+    }
+    .login_right {
+        width: 100%;
+    }
+    .login_am {
+        width: 90%;
+    }
+    .score_eat {
+        margin-left: 30px;
+    }
+    .desc-order {
+        width: 100%;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .card-order {
+        margin: 0 auto;
+    }
+    .decs_check {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .flex-wrap_sm {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .card-order1 {
+        margin-right: 0;
+        width: 100%;
+    }
+    .payment-pay-cancel {
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .pic_app {
+        position: relative;
+        top: unset;
+        width: 285px;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+    .sibapp a img {
+        margin-top: 0;
+        margin-right: 10px;
+    }
+    .info_person_div {
+        position: relative;
+        top: -60px;
+    }
+    .text1 {
+        width: 100%;
+        line-height: 2;
+    }
+    .text2_form {
+        font-size: 12px;
+    }
+    .text_area {
+        text-align: center;
+    }
+    .saved_info {
+        width: 180px;
+        height: 45px;
+        line-height: 1.8;
+    }
+    .form_accuent {
+        margin-top: 25px;
+    }
+    .form_am, .select_am {
+        height: 42px;
+    }
+    .tondtond_warp {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .baner_in_my {
+        margin: 0 auto;
+    }
+    .get_app {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+    .list_footer ul li a {
+        font-size: 12px;
+    }
+    #like:not(:checked)>label {
+        font-size: 22px;
+    }
+    .rating h2 {
+        font-size: 17px;
+    }
+    .card-payment {
+        border-radius: 10px;
+        width: 100%;
+    }
+    .box-order2 {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .payment_restourant {
+        margin: 0 auto;
+        margin-top: 24px;
+        width: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .num-pay1 {
+        width: 50%;
+        order: 1;
+        line-height: 2;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .basket-pay1 {
+        width: 50%;
+        order: 2;
+        margin-top: 10px;
+        line-height: 2;
+        font-size: 25px;
+    }
+    .casting-pay1 {
+        width: 50%;
+        order: 3;
+        line-height: 2;
+        font-size: 25px;
+    }
+    .toman {
+        width: 50%;
+        order: 4;
+        margin-top: 0;
+        line-height: 2;
+        font-size: 25px;
+    }
+    .see-pay1 {
+        order: 5;
+        margin-top: 15px;
+    }
+    .card-payment {
+        border-radius: 20px;
+    }
+    .prog_me {
+        width: 76%;
+    }
+    .offer_flex {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .offer_flex_pink {
+        background: #ff235c;
+        padding: 15px 45px;
+        border-radius: 0;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+    }
+    .offer_flex_input {
+        width: 71%;
+        padding-bottom: 15px;
+    }
+    .btn_offer_send {
+        padding: 18px 12px;
+    }
+    .offer_flex_pink_span1 {
+        font-size: 25px;
+    }
+    .offer_flex_pink_span2 {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+    .offer_flex_input {
+        width: 64%;
+        padding-bottom: 15px;
+    }
+    .alert_input_offer {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .alert_offer {
+        font-size: 10px;
+    }
+    .media_index_tt {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .a_media_index_img {
+        margin: 0 auto;
+    }
+    .profile_slider {
+        top: 0;
+    }
+    section.access {
+        position: relative;
+        margin-top: 79px;
+    }
+    .enable_tond span {
+        font-size: 21px;
+    }
+    .peroperty span {
+        font-size: 12px;
+    }
+    .peroperty {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .mt-me {
+        margin-top: 0;
+    }
+    .sibapp a img {
+        margin-right: 0;
+    }
+    .mycard_am {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .img_order {
+        border-left: 0;
+        width: 100%;
+    }
+    .see-order {
+        margin-right: 0;
+    }
+    .comment-order {
+        margin-left: 0;
+    }
+    .score_eat {
+        margin-left: 0;
+    }
+    .tt_dflex {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        -o-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+    }
+    .food-info h2 {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .text_order {
+        font-size: 14px;
+    }
+    .food-info p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .justify-content-tt {
+        -webkit-justify-content: center;
+        -o-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+    }
+    .mynav .navbar-brand {
+        /* width: 100%;
+        text-align: center; */
+        margin-bottom: 12px;
+    }
+    .btn_succ1 {
+        display: none;
+    }
+    .btn_succ2 {
+        display: block;
+    }
+    .box1 ul {
+        left: 0;
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+    }
+    .box_rest_top .media_me {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .box_rest_top .image_item {
+        text-align: center;
+        width: 100%;
+    }
+    .box_rest_top .img_card_item_in {
+        margin: 0 auto;
+    }
+    .box_rest_top .media-body {
+        margin-top: 42px;
+    }
+    #header_curve {
+        bottom: -1px;
+    }
+    .box_rest_top {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 600px) {
+    .checkout_card {
+        height: 358px;
+    }
+    .prog_me {
+        width: 73%;
+    }
+    .sharzh_akhir_div2 {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-around !important;
+        -o-justify-content: space-around !important;
+        -moz-justify-content: space-around !important;
+        -ms-justify-content: space-around !important;
+        justify-content: space-around !important;
+    }
+    .sharzh_akhir_div2 .span3 {
+        margin-top: 10px;
+    }
+    .sharzh_akhir_div2 .span2 {
+        margin-top: 10px;
+    }
+    .loaction_accuent_setting {
+        width: 236px;
+        margin: 0 auto;
+        top: 0;
+        margin-top: 25px;
+    }
+    .profile_setting {
+        position: relative;
+        width: 157px;
+        height: 157px;
+        margin: 0 auto;
+    }
+    .pro_text {
+        text-align: center;
+        margin-top: 25px;
+    }
+    .info_person {
+        text-align: center;
+    }
+    .text2_form {
+        text-align: center;
+    }
+    .get_app {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .order_box {
+        width: 66%;
+        height: 230px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .pic_app img {
+        width: 200px;
+        position: relative;
+        left: -61px;
+    }
+    .text_3 {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .image_item {
+        margin: 0 auto;
+        width: 98px;
+    }
+    .media_me {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .media-body_tt {
+        width: 100%;
+        flex: unset;
+    }
+    .num_hour_btn {
+        margin-top: 5px;
+    }
+    .btn_rest_more {
+
+        margin-bottom: 20px;
+    }
+    .tt_my_jc2 {
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -o-justify-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+       }
+       .rest_call {
+        margin: 22px 0;
+    }
+    .vis_xs{
+        display: block;
+    }
+    .hid_xs{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .welcome {
+        display: none;
+    }
+    .access-img {
+        background-position: center;
+    }
+    .top-banner img {
+        height: 190px;
+    }
+    .card-order {
+        margin: 0 auto;
+        width: 235px;
+    }
+    .text1 {
+        font-size: 14px;
+        top: 15px;
+        text-align: justify;
+    }
+    .login_am {
+        width: 97%;
+    }
+    .flex-wrap_sm {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .price {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .express_index span {
+        margin-left: 30px;
+    }
+    .express_index {
+        padding: 10px;
+    }
+    .get_app {
+        margin-top: 10px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -o-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-justify-content: space-around;
+        -o-justify-content: space-around;
+        justify-content: space-around;
+    }
+    .peroperty_me {
+        margin-top: 0px;
+    }
+    .sibapp {
+        margin-top: 0px;
+    }
+    .footer3 {
+        margin-top: 75%;
+        width: 100%;
+        height: 140px;
+        background-color: #f9f9f9;
+    }
+    .card-payment {
+        border-radius: 10px;
+        width: 100%;
+    }
+    .payment_restourant {
+        margin: 0 auto;
+        margin-top: 12px;
+    }
+    .card-payment {
+        border-radius: 20px;
+    }
+    .box-order2 {
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .prog_me {
+        width: 58%;
+    }
+    .favirte-access {
+        width: 76px;
+    }
+    .favirte-access {
+        width: 29%;
+    }
+    .favirte-access2 {
+        width: 54px;
+    }
+    .enable_tond span {
+        font-size: 21px;
+        color: #fff;
+        font-family: 'IRANYekanWeb(Bold)';
+    }
+    .num-pay1 {
+        font-size: 18px;
+    }
+    .basket-pay1 {
+        font-size: 18px;
+    }
+    .casting-pay1 {
+        font-size: 18px;
+    }
+    .toman {
+        font-size: 18px;
+    }
+    .sharzh {
+        width: 280px;
+    }
+    .bg_wallet {
+        background-position: unset;
+    }
+    .mynav {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .mynav .navbar-nav {
+        width: 100%;
+    }
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+    .footer {
+        height: 180px;
+    }
+    .login_left {
+        display: none;
+    }
+    .login_right {
+        width: 100%;
+    }
+}
